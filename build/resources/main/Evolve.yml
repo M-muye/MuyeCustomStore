@@ -1,0 +1,154 @@
+Title: '&6超级进化石商店 &f第 %page% / %pages% 页 &9点券&f: %playerpoints_points%'
+Currency: 'point'
+Layout:
+  - '#q#w#e#r#'
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'p#######n'
+Icons:
+  q:
+    name: '&c▣ &f&l个人档案 &7&l》》》'
+    mat: 'custommc_item147'
+    lore:
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▣ &7&l[&a&l点击打开&7&l] &f&l个人档案 &7&l》》》'
+      - '&c◑ &7&l每日签到 每日在线 称号系统 体力系统'
+      - '&c◑ &7&l结婚系统 快捷指令'
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▹ &e&l更多个人档案功能敬请期待  '
+      - '&6&l============&a&l=============&b&l============'
+    action:
+      all:
+        - 'console: trmenu open 个人档案 %player%'
+  w:
+    mat: 'custommc_item168'
+    name: '&c▣ &f&l世界地图 &7&l》》》'
+    lore:
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▣ &7&l[&a&l点击打开&7&l] &f&l世界地图 &7&l》》》'
+      - '&c◑ &7&l源起小岛 任务神社 活动神社 神兽试炼'
+      - '&c◑ &7&l精灵温泉 时装展厅 努力特训 精灵大陆'
+      - '&c◑ &7&l源起家园 资源大陆'
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▹ &e&l更多世界地图坐标敬请期待  '
+      - '&6&l============&a&l=============&b&l============'
+    action:
+      all:
+        - 'console: trmenu open 世界地图 %player%'
+  e:
+    mat: 'custommc_item188'
+    name: '&c▣ &f&l玩法系统 &7&l》》》'
+    lore:
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▣ &7&l[&a&l左键打开&7&l] &f&l精灵玩法 &7&l》》》'
+      - '&c◑ &7&l精灵信息 精灵皮肤 精灵打工 精灵融合'
+      - '&c◑ &7&l精灵图鉴 精灵冰巢 精灵成就 精灵洗练'
+      - '&c◑ &7&l精灵排位 精灵战令'
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▣ &7&l[&a&l右键打开&7&l] &f&l功能玩法 &7&l》》》'
+      - '&c◑ &7&l任务系统 公会系统 '
+      - '&c▹ &e&l更多全新玩法敬请期待  '
+      - '&6&l============&a&l=============&b&l============'
+    action:
+      left:
+        - 'console: trmenu open 精灵玩法 %player%'
+      right:
+        - 'console: trmenu open 功能玩法 %player%'
+  r:
+    mat: 'custommc_item219'
+    name: '&c▣ &f&l经济系统 &7&l》》》'
+    lore:
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▣ &7&l[&a&l左键打开&7&l] &f&l源起商城 &7&l》》》'
+      - '&c◑ &7&l金币商城 点券商城 源点商城'
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▣ &7&l[&a&l右键打开&7&l] &f&l充值系统 &7&l》》》'
+      - '&c◑ &7&l禁止未成年的朋友进行充值操作哦'
+      - '&c◑ &7&l本服虽然很需要资金进行活动运营'
+      - '&c◑ &7&l但是腐竹认为游戏还是有点虚拟的'
+      - '&c◑ &7&l服务器还不需要朋友们的不是工作'
+      - '&c◑ &7&l辛辛苦苦攒下来的钱拿来进行充值'
+      - '&6&l============&a&l=============&b&l============'
+      - '&c▹ &e&l更多优惠商品好物敬请期待  '
+      - '&6&l============&a&l=============&b&l============'
+    action:
+      left:
+        - 'console: trmenu open 源起商城 %player%'
+      right:
+        - 'console: trmenu open 充值系统 %player%'
+  '#':
+    name: ' '
+    mat: 'STAINED_GLASS_PANE'
+  n:
+    name: '&c▣ &f&l下一页'
+    mat: 'arrow'
+    action:
+      all:
+        - 'next'
+  p:
+    name: '&c▣ &f&l上一页'
+    mat: 'arrow'
+    action:
+      all:
+        - 'pre'
+Item:
+  Slots: '9-44'
+  Lore:
+    - '&6&l============&a&l=============&b&l============'
+    - '&c◑ &f价格 %value% %type%&f / 个 '
+    - '&c◑ &f余额 %playerpoints_points% 点券 '
+    - '&6&l============&a&l=============&b&l============'
+    - '&c▹ &f[ &e&l左键 &f] 开始购买'
+    - '&6&l============&a&l=============&b&l============'
+Items:
+  PIXELMON_ABOMASITE=0: 100
+  PIXELMON_ABSOLITE=0: 100
+  PIXELMON_AERODACTYLITE=0: 100
+  PIXELMON_AGGRONITE=0: 100
+  PIXELMON_ALAKAZITE=0: 100
+  PIXELMON_ALTARIANITE=0: 100
+  PIXELMON_AMPHAROSITE=0: 100
+  PIXELMON_AUDINITE=0: 100
+  PIXELMON_BANETTITE=0: 100
+  PIXELMON_BEEDRILLITE=0: 100
+  PIXELMON_BLASTOISINITE=0: 100
+  PIXELMON_BLAZIKENITE=0: 100
+  PIXELMON_CAMERUPTITE=0: 100
+  PIXELMON_CHARIZARDITE_X=0: 100
+  PIXELMON_CHARIZARDITE_Y=0: 100
+  PIXELMON_DIANCITE=0: 100
+  PIXELMON_GALLADITE=0: 100
+  PIXELMON_GARCHOMPITE=0: 100
+  PIXELMON_GARDEVOIRITE=0: 100
+  PIXELMON_GENGARITE=0: 100
+  PIXELMON_GLALITITE=0: 100
+  PIXELMON_GYARADOSITE=0: 100
+  PIXELMON_HERACRONITE=0: 100
+  PIXELMON_HOUNDOOMINITE=0: 100
+  PIXELMON_KANGASKHANITE=0: 100
+  PIXELMON_LATIASITE=0: 100
+  PIXELMON_LATIOSITE=0: 100
+  PIXELMON_LOPUNNITE=0: 100
+  PIXELMON_LUCARIONITE=0: 100
+  PIXELMON_MANECTITE=0: 100
+  PIXELMON_MAWILITE=0: 100
+  PIXELMON_MEDICHAMITE=0: 100
+  PIXELMON_METAGROSSITE=0: 100
+  PIXELMON_MEWTWONITE_X=0: 100
+  PIXELMON_MEWTWONITE_Y=0: 100
+  PIXELMON_PIDGEOTITE=0: 100
+  PIXELMON_PINSIRITE=0: 100
+  PIXELMON_SABLENITE=0: 100
+  PIXELMON_SALAMENCITE=0: 100
+  PIXELMON_SCEPTILITE=0: 100
+  PIXELMON_SCIZORITE=0: 100
+  PIXELMON_SHARPEDONITE=0: 100
+  PIXELMON_SLOWBRONITE=0: 100
+  PIXELMON_STEELIXITE=0: 100
+  PIXELMON_SWAMPERTITE=0: 100
+  PIXELMON_TYRANITARITE=0: 100
+  PIXELMON_VENUSAURITE=0: 100
+  PIXELMON_MTMEWTWONITE_X=0: 100
+  PIXELMON_MTMEWTWONITE_Y=0: 100

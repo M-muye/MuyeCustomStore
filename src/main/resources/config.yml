@@ -1,0 +1,110 @@
+#信息前缀
+Prefix: '&7『&b&l沐夜&7』 &7// '
+#信息提示
+Messages:
+  UnKnown: '&f&l未知的动作'
+  Buy: '&f&l你购买了 %amount% 个 %item%'
+  NoMoney: '&f&l你的金币不够,你只有 %money%'
+  LeftMoney: '&f&l你还剩下 %money% 金币'
+  NoPoint: '&f&l你的点券不够,你只有 %point%'
+  LeftPoint: '&f&l你还剩下 %point% 点券'
+  FirstPage: '&f&l已经是第一页了'
+  LastPage: '&f&l已经是最后一页了'
+########## 物品属性
+# 'i':
+#    name: '物品名字'
+#    mat: '材质名字'
+#    data: '物品数据值'
+#    amt: '物品数量'
+#    lore:
+#      - ''
+#    action:
+#      all|left|right|shift_left|shift_right:
+#        - 'console: [指令]' #控制台身份执行
+#        - 'op: [指令]' #op身份执行,不建议
+#        - 'player: [指令]' #玩家身份执行
+#        - 'buy: [数量]' #购买指定数量的物品
+#        - 'buy' #让玩家输入购买的数量并进行购买
+#        - 'back' #返回
+#        - 'delete' #删除指定商店中的选中物品
+#        - 'set' #输入物品的价值并设置
+##########
+#购买界面
+Buy:
+  Title: '&a购买界面 &9点券&f: %playerpoints_points% &e金币&f: %cmi_user_balance%'
+  Layout: # $指的是商品
+    - '#########'
+    - '#   1   #'
+    - '# 2 $ 3 #'
+    - '#   4   #'
+    - '####p####'
+  '#':
+    name: ' '
+    mat: 'STAINED_GLASS_PANE'
+  '1':
+    name: '&c▣ &f&l购买一个'
+    mat: 'apple'
+    amt: '1'
+    action:
+      all:
+        - 'buy: 1'
+  '2':
+    name: '&c▣ &f&l购买半组'
+    mat: 'apple'
+    amt: '32'
+    action:
+      all:
+        - 'buy: 32'
+  '3':
+    name: '&c▣ &f&l购买一组'
+    mat: 'apple'
+    amt: '64'
+    action:
+      all:
+        - 'buy: 64'
+  '4':
+    name: '&c▣ &f&l自定义购买'
+    mat: 'apple'
+    action:
+      all:
+        - 'buy'
+  'p':
+    name: '&c▣ &f&l返回'
+    mat: 'STAINED_GLASS_PANE'
+    data: '7'
+    action:
+      all:
+        - 'back'
+#编辑界面
+Edit:
+  Title: '&a编辑'
+  Layout:
+    - '#########'
+    - '#       #'
+    - '# 1 $ 2 #'
+    - '#       #'
+    - '####p####'
+  '#':
+    name: ' '
+    mat: 'STAINED_GLASS_PANE'
+  '1':
+    name: '&c▣ &c&l删除物品'
+    mat: 'STAINED_GLASS_PANE'
+    data: '14'
+    action:
+      all:
+        - 'delete'
+  '2':
+    name: '&c▣ &f&l自定义'
+    mat: 'STAINED_GLASS_PANE'
+    data: '2'
+    action:
+      all:
+        - 'set'
+  'p':
+    name: '&c▣ &f&l返回'
+    mat: 'STAINED_GLASS_PANE' #只支持物品id名
+    data: '7'
+    action:
+      all:
+        - 'back'

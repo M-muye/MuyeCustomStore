@@ -1,0 +1,13 @@
+name: MuyeCustomStore
+version: '1.0-SNAPSHOT'
+main: com.muye.muyecustomstore.MuyeCustomStore
+author: Muye
+depend:
+  - Vault
+  - PlayerPoints
+softdepend:
+  - PlaceholderAPI
+commands:
+  MuyeCustomStore:
+    aliases: mcs
+    description: "总指令"
